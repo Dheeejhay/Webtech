@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Lab</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 { color:navy;
+        }
+        #page-title {
+            text-align:center;
+        }
+        .card {
+            background-color: #eeeeee;
+            padding: 15px;
+            margin 10px;
+        }
+        .card p {
+            color: #444444;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="page-title">CSS Selectors Laboratory</h1>
+
+    <p>Element selectors style all matching HTML tags across a page.</p>
+    <p class="highlight-paragraph">Class selectors style multiple elements that share a common class name.</p>
+    <p>ID selectors target a single unique element and have higher specificity than a classes or elements.</p>
+    
+    <div class="card">
+        <h2>Element Selectors</h2>
+        <p>Type selectors match tag names directl, such as body, h1, or p.</p>
+    </div>
+
+    <div class="card">
+        <h3>Class Selectors</h3>
+        <p>Class selectors start with a dot (.) and can be applied to many elements.</p>
+
+    <div class="card">
+        <h2>ID Selectors</h2>
+        <p>ID selectors start with a hash (#) and are meant for unique elements like #page-title.</p>
+    </div>
+    
+    </div>
+</body>
+</html>
